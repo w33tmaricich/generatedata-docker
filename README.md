@@ -2,7 +2,15 @@
 
 Dockerfile and script used to deploy an instance of generatedata.com.
 
-## Installation Instructions
+## Docker-Compose Instructions
+
+1. Install docker and docker-compose on your system
+2. Clone this repository and make it your current directory
+3. `docker-compose up`
+
+You are all done! Have fun!
+
+## Script Installation Instructions
 
 1. Install docker on your system.
 2. Clone this repository and make it your current directory.

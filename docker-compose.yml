@@ -1,0 +1,15 @@
+version: '3'
+services:
+        web:
+                build: .
+                container_name: generatedata
+                ports:
+                        - "80:80"
+                links:
+                        - db
+        db:
+                image: "mysql:5.7"
+                container_name: generatedata-mysql
+                environment:
+                        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+                        - MYSQL_DATABASE=generatedata
